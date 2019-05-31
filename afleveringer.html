@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="https://use.typekit.net/xsm3nmq.css">
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="grafik/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="grafik/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="grafik/favicons/favicon-16x16.png">
+    <link rel="manifest" href="grafik/favicons/site.webmanifest">
+    <link rel="mask-icon" href="grafik/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="kea">
+                    <a href="index.html">
+                        <figure class="kea"><img src="grafik/logo.svg" alt="logo">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <!---<div><a href="#">
+                    <i class="fa fa-fw fa-user"></i></a>
+            </div>--->
+            <div>
+                <div id="navOverlay" class="overlay">
+                    <a href="javascript:void(0)" id="nav_close" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul id="menu" class="hidden">
+                        <li class="home"><a href="forside.html#forside">Home</a></li>
+                        <li><a href="#">Learning</a>
+                            <ul>
+                                <li><a href="index.html#exams">Exams</a></li>
+                                <li><a href="index.html#materials">Materials</a></li>
+                                <li><a href="index.html#exercises">Exercises</a></li>
+                                <li><a href="afleveringer.html">Assignments</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="afleveringer.html">Assignments</a></li>
+                        <li><a href="index.html#messages">Messages</a></li>
+                        <li><a href="index.html#schedule">Schedule</a></li>
+                        <li><a href="index.html#chat">Chat</a></li>
+                        <li><a href="index.html#notifications">Notifications</a></li>
+                        <li><a href="index.html#mail">KEA Mail</a></li>
+                        <!---<li><a href="index.html#info">Info</a></li>
+                        <li><a href="index.html#settings">Settings</a></li>
+                        <li><a href="index.html#search">Search</a></li>-->
+                    </ul>
+                </div>
+                <div id="menuknap" onclick="openNav()">&#9776;</div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="assignments">
+        <div class="sectionwrapper">
+
+            <div class="col">
+                <div class="top">
+                    <div class="txt">
+                        <h2>Upcoming</h2>
+                    </div>
+                </div>
+                <div class="data">
+                    <ul class="soon">
+                        <li class="overskrift">04.01.01 Design Sprint</li>
+                        <li>21/5/19</li>
+                        <li>Afleveringsopgave
+                        </li>
+                    </ul>
+
+                    <div class="info">
+                        <div class="knap">
+                            <a href="upcoming.html">Info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data">
+                    <ul class="soon">
+                        <li class="overskrift">04.02.01. Web prototype</li>
+                        <li>31/5/19</li>
+                        <li>Afleveringsopgave</li>
+                    </ul>
+
+                    <div class="info">
+                        <div class="knap">
+                            <a href="upcoming.html">Info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data">
+                    <ul class="soon">
+                        <li class="overskrift">04.03.01. Design sprint: Native app</li>
+                        <li>07/6/19</li>
+                        <li>Afleveringsopgave</li>
+                    </ul>
+
+                    <div class="info">
+                        <div class="knap">
+                            <a href="upcoming.html">Info</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <h2>Record</h2>
+                <div class="data">
+                    <div class="Assignment">
+                        <h2>Navn</h2>
+                        <p>Deadline:</p>
+                        <p>Status</p>
+                        <p>Details</p>
+                        <p>Upload</p>
+                    </div>
+                    <div class="Assignment">
+                        <p>Name</p>
+                        <form action="assingnment.html">
+                        </form>
+                    </div>
+
+                    <div class="Assignment">
+                        <p>Name</p>
+                        <form action="assingnment.html">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="mobile-nav" id="myNavbar">
+            <a href="forside.html"><i class="fa fa-fw fa-home"></i>
+                <p>Home</p>
+            </a>
+            <a href="forside.html"><i class="fa fa-bell-o"></i>
+                <p>Notifications</p>
+            </a>
+            <a href="forside.html"><i class="fa fa-fw fa-envelope"></i>
+                <p>Messages</p>
+            </a>
+            <a href="forside.html"><i class="fa fa-calendar"></i>
+                <p>Schedule</p>
+            </a>
+            <a href="forside.html"><i class="fa fa-fw fa-search"></i>
+                <p>Search</p>
+            </a>
+        </div>
+    </footer>
+
+
+</body></html>

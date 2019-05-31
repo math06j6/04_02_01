@@ -1,0 +1,1213 @@
+/******************** GENERELT ********************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #ededed;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    color: #233249;
+    font-family: 'nimbus-sans', sans-serif;
+
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    margin-top: 50px;
+}
+
+.sectionwrapper {
+    background-size: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+/* FOOTER */
+
+/*footer {
+    background-color: #233249;
+    margin: 0px;
+    padding: 20px 20px;
+
+}
+
+footer .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}*/
+
+/* FOOTER SLUT */
+
+/******************** GENERELT SLUT  ******************** /
+
+
+
+/******************** TYPOGRAFI ********************/
+
+
+h1 {
+    font-family: 'nimbus-sans-condensed', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: 'nimbus-sans-condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+}
+
+h3 {
+    font-family: 'nimbus-sans-condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.20rem;
+}
+
+h4 {
+    font-family: 'nimbus-sans-condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.0rem;
+}
+
+p {
+    font-family: 'nimbus-sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+li {
+    font-family: 'nimbus-sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.25;
+}
+
+figcaption {
+    font-family: 'nimbus-sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'nimbus-sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #233249;
+
+}
+
+/********************  TYPOGRAFI SLUT ********************/
+
+
+
+
+/********************  MENU  ********************/
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
+header figure {
+    padding: 0;
+    width: 60%;
+    margin: auto 5px auto 5px;
+}
+
+figure.logo {
+    margin: auto 5px;
+    padding: 0;
+}
+
+.kea {
+    margin: 10px;
+    cursor: pointer;
+}
+
+header img {}
+
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    background-size: 100%;
+    overflow: hidden;
+    background-color: #ea5045;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+
+}
+
+header menu a {
+    flex-basis: auto;
+    flex-grow: 1;
+    padding: 0.5rem;
+    font-family: 'nimbus-sans', sans-serif;
+    font-size: 0.85rem;
+
+}
+
+header nav a:link,
+header nav a:visited,
+header nav a:active {
+    color: #233249;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #23527C;
+    text-decoration: none;
+}
+
+header nav a:active {
+    color: #23527C;
+    text-decoration: none;
+}
+
+
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ea5045;
+    background-color: #ea5045;
+    overflow-y: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+
+
+
+
+#menuknap {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px;
+    color: #233249;
+    background-color: #ea5045;
+
+}
+
+#menu {
+    list-style-type: none;
+    flex-direction: column;
+    transition: transform .2s;
+    transform-origin: top left;
+    text-align: center;
+    margin: 12.5% 0 12.5% 0;
+}
+
+
+.hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+    background-color: #ea5045;
+    max-height: 0px;
+}
+
+header li {
+    background-color: #ea5045;
+    display: block;
+    position: relative;
+    transition-duration: 0.5s;
+    text-align: center;
+    margin: 15px;
+
+}
+
+header li:hover,
+header li:focus-within {
+    color: white;
+    cursor: pointer;
+}
+
+header nav a:hover {}
+
+header li:focus-within a {
+    outline: none;
+}
+
+header ul li ul {
+    visibility: hidden;
+    opacity: 1;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+header ul li: hover > ul,
+header ul li: focus-within > ul,
+header ul li ul: hover,
+header ul li ul: focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+
+}
+
+
+
+
+
+.overlay a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: white;
+}
+
+#menu li.home {
+    display: contents;
+}
+
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+@media only screen and (min-width:800px) {
+
+    .overlay {
+        overflow-y: visible;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+
+    .overlay a {
+        padding: 0;
+        font-size: 0.9rem;
+        transition: 0.3s;
+        display: block;
+    }
+
+    nav {
+        border-bottom: 0.1px solid #e4e4e4;
+        justify-content: space-between;
+
+    }
+
+    #menuknap {
+        display: none;
+        margin: 15px;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        text-align: right;
+        margin: 0;
+    }
+
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+        text-align: right;
+
+    }
+
+    #menu li.home {
+        display: none;
+    }
+
+    overlay .closebtn {
+        display: none;
+    }
+
+    .overlay .closebtn {
+        display: none;
+
+    }
+
+}
+
+
+
+
+/******************** MENU SLUT ********************/
+
+/******************** NAV BOTTOM ********************/
+
+
+.mobile-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #233249;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+}
+
+.mobile-nav a {
+    flex-grow: 1;
+    flex-basis: 300px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2.5px;
+    margin: auto 2.5px;
+    text-decoration: none;
+}
+
+.mobile-nav a:hover {
+    color: #1AB2A6;
+}
+
+.mobile-nav a.active {
+    color: white;
+}
+
+.mobile-nav .icon {
+    display: none;
+}
+
+.mobile-nav p {
+    margin: 5px 0px;
+    font-size: 2.5vw;
+}
+
+
+@media screen and (max-width: 300px) {
+    .mobile-nav p {
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .mobile-nav p {
+        display: none;
+
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .mobile-nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .mobile-nav .responsive a {
+        float: none;
+        display: block;
+
+    }
+
+
+}
+
+
+@media screen and (min-width: 800px) {
+    .mobile-nav a {
+        display: none;
+    }
+
+    .mobile-nav {
+        height: 5%;
+    }
+
+
+}
+
+
+/******************** NAV BOTTOM SLUT ********************/
+
+
+
+
+/******************** LOGIN ********************/
+
+#login {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#login .konto {
+    background-color: #E0E0E0;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+
+    @media(max-width: 600px) {
+        width: 320px;
+
+        form {
+            padding: 2rem;
+        }
+
+    }
+}
+
+#login .txt {
+    background-color: #233249;
+
+}
+
+
+#login h2 {
+    color: #FFFDFD;
+    padding: 15px;
+    background-color: #233249;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+form {
+    padding: 2.5rem;
+}
+
+#login a {
+    text-decoration: none;
+}
+
+#login input[type=password],
+#login input[type=email] {
+    width: 100%;
+    padding: 1rem;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #233249;
+    color: #233249;
+    font-family: 'nimbus-sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+#login .password:focus,
+#login .email:focus {
+    color: #233249;
+    background-color: #ededed;
+    border: 2px solid #1AB2A6;
+}
+
+
+input {
+    width: 100%;
+    background: none;
+    color: #233249;
+    border: 2px solid #233249;
+    padding: 1rem;
+    margin: 8px 0;
+}
+
+input:focus {
+    border-color: #1AB2A6;
+    outline: 0;
+}
+
+#login .button {
+    background: #1AB2A6;
+    color: #233249;
+    padding: 1rem;
+    margin: 8px 0;
+    width: 100%;
+    font-family: 'nimbus-sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#login .button:active,
+#login .button:hover {
+    opacity: 1;
+
+}
+
+.choose {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow-wrap: normal;
+}
+
+.checkbox-checkbox {
+    flex-grow: 1;
+    flex-basis: 300px;
+    display: block;
+    position: relative;
+}
+
+
+.check {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 8px 0;
+    text-align: start;
+    width: 100%;
+}
+
+.check input {
+    width: initial;
+    margin: 3px 5px 5px 0;
+}
+
+
+.checkbox {
+    width: initial;
+    margin: 5px 5px 5px 0;
+    flex-grow: 0;
+    flex-basis: auto;
+
+}
+
+.check p {
+    margin: 0;
+    font-family: 'nimbus-sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+
+
+
+.forgot-password {
+    flex-grow: 1;
+    flex-basis: 300px;
+    display: block;
+    text-align: right;
+    margin: 8px 0;
+    font-family: 'nimbus-sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+
+/******************** LOGIN SLUT ********************/
+
+
+
+/******************** FORSIDE ********************/
+
+#forside .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 25%;
+}
+
+#forside .col {
+    /* child flex */
+    flex-grow: 1;
+    flex-basis: 300px;
+    /* parent flex */
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+#forside .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 0 10px 5px 10px;
+    max-width: 500px;
+}
+
+#forside .txt {}
+
+#forside .dato {
+    align-items: flex-start;
+    margin-right: 5px;
+}
+
+#forside .dato p,
+#forside h2 {
+    margin: 0;
+    text-transform: uppercase;
+
+}
+
+#forside h2 {
+    margin: 0;
+    text-decoration: underline solid #EA5045;
+
+}
+
+
+#forside .soon li,
+#forside .data {
+    list-style: none;
+    padding: 0;
+}
+
+#forside .soon {
+    flex-grow: 1;
+    flex-basis: 300;
+    margin: 5px;
+    padding: 5px;
+}
+
+#forside .soon li {
+    font-size: 0.7rem;
+    color: #23527C;
+}
+
+#forside .soon ul:hover {
+    background-color: #fffbc3;
+    cursor: pointer;
+}
+
+
+#forside li.overskrift {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+    color: #233249;
+}
+
+#forside .data {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: #E0E0E0;
+    margin-bottom: 5px;
+    max-width: 500px;
+
+}
+
+#forside .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+#forside .knap {
+    flex-grow: 1;
+    flex-basis: 300px;
+    text-align: center;
+    background-color: #C8D0D8;
+    padding: 0.5rem 1rem;
+}
+
+#forside .knap a {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 0.75rem;
+}
+
+
+#forside .button {
+    margin: 8px 0;
+    padding: 14px 20px;
+    border: 2px solid;
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+
+#forside a.button {
+    background-color: #1AB2A6;
+    border: 2px solid #1AB2A6;
+    color: white;
+    padding: 0.4rem 1rem;
+    position: relative;
+}
+
+#forside a.button:hover {
+    background-color: #23527C;
+    border: 2px solid #23527C;
+    color: white;
+}
+
+#forside a.button:active {
+    background-color: #23527C;
+    border: 2px solid #23527C;
+    color: white;
+    top: 5px;
+}
+
+
+
+/******************** FORSIDE SLUT ********************/
+
+
+
+
+/******************** AFLEVERINGER ********************/
+
+
+#assignments .sectionwrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20%;
+
+}
+
+
+#assignments .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+
+
+}
+
+
+#assignments .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 0 10px 5px 10px;
+
+}
+
+#assignments h {
+    margin: 0;
+    text-transform: uppercase;
+    text-decoration: underline solid #EA5045;
+}
+
+#assignments .txt {
+    flex: 1;
+    flex-basis: 300;
+}
+
+
+#assignments .txt p {}
+
+#assignments .soon li,
+#assignments .data {
+    list-style: none;
+    padding: 0;
+}
+
+#assignments .soon {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#assignments .soon li {
+    font-size: 0.7rem;
+    color: #23527C;
+}
+
+
+#assignments .soon li:last-child {
+    border: 0;
+}
+
+#assignments li.overskrift {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+    color: #233249;
+}
+
+#assignments .data {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: #E0E0E0;
+    margin-bottom: 5px;
+    padding: 0 5px 0 5px;
+
+}
+
+#assignments .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+#assignments .knap {
+    flex-grow: 1;
+    flex-basis: 300;
+    text-align: center;
+    background-color: #C8D0D8;
+    padding: 0.5rem 1rem;
+}
+
+#assignments .knap a {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.knap:hover,
+.knap:active {
+    background-color: #23527C;
+}
+
+/******************** AFLEVERINGER SLUT ********************/
+
+
+
+/*--------------------------------
+UPCOMING
+--------------------------------*/
+
+
+
+/*--------------------------------#upcoming .sectionwrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+
+}
+UPCOMING
+
+#upcoming .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 0 10px 5px 10px;
+
+}
+--------------------------------*/
+
+#upcoming .sectionwrapper {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#upcoming .assignment {
+    width: 100%;
+
+}
+
+
+
+
+.box_top {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+    background-color: #C8D0D8;
+
+}
+
+.box_bottom {
+    color: #FFFDFD;
+    padding: 2.5px;
+    background-color: #233249;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#upcoming .box_top ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#upcoming .box_top li {}
+
+
+#upcoming input.file {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 2.5rem;
+}
+
+
+.custom-file-input {
+    color: transparent;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-file-input::before {
+    content: 'Upload file';
+    color: #233249;
+    display: inline-block;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.custom-file-input:hover::before {
+    border-color: black;
+}
+
+.custom-file-input:active {
+    outline: 0;
+}
+
+.custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+
+custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+
+
+/*--------------------------------
+UPCOMING SLUT
+--------------------------------*/
+
+
+
+/*--------------------------------
+ MEDIAQUERIES
+--------------------------------*/
+
+
+@media (min-width: 600px) {
+    .kea {
+        margin-left: 15px;
+    }
+
+
+
+    #assignments .sectionwrapper {
+        margin: 120px 20% 0 20%;
+    }
+
+    #forside .sectionwrapper {
+        margin-top: 120px;
+    }
+
+    @media (min-width: 900px) {}
+
+    /*--------------------------------
+ MEDIAQUERIES SLUT
+--------------------------------*/
+
+    /******************** OPRET ********************/
+
+
+    #tilmeld_nu {
+        padding: 15px;
+        margin-top: 2.5vw;
+        margin-bottom: 2.5vw;
+
+    }
+
+    #tilmeld_nu .sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 45px;
+
+
+    }
+
+    #tilmeld_nu .col_right {
+        padding: 30px;
+        margin: 50px;
+        max-width: 400px;
+        border-radius: 5px;
+        background-color: #23527C;
+    }
+
+
+    #tilmeld_nu .login {}
+
+    #tilmeld_nu input[type=text],
+    #tilmeld_nu input[type=number],
+    #tilmeld_nu input[type=date],
+    #tilmeld_nu input[type=tel],
+    #tilmeld_nu input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #23527C;
+        border-radius: 4px;
+        background-color: #e4e4e4;
+        font-weight: 400;
+    }
+
+    #tilmeld_nu input[type=email]:focus {
+        background-color: white;
+    }
+
+    #tilmeld_nu input[type=submit] {
+        width: 100%;
+        background-color: #23527C;
+        ;
+        color: #ffffff;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: 2px solid #ffffff;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #tilmeld_nu input[type=submit]:hover {
+        background-color: #ffffff;
+        color: #23527C;
+    }
+
+    #tilmeld_nu .txt,
+    #tilmeld_nu .firstname,
+    #tilmeld_nu .lastname,
+    #tilmeld_nu .adresse,
+    #tilmeld_nu .post,
+    #tilmeld_nu .by,
+    #tilmeld_nu .nummer,
+    #tilmeld_nu .email {
+        color: #23527C;
+    }
+
+    #tilmeld_nu .bday {
+        color: rgb(117, 117, 117)
+    }
+
+    input type="date"required="required" > #tilmeld_nu .button {
+        color: #ffffff;
+        background-color: #ecf0f1;
+        font-weight: bold;
+    }
+
+    #tilmeld_nu .form {
+        color: #23527C;
+    }
+
+
+    #tilmeld_nu .text {
+        margin: 5px;
+        padding: 5px;
+        padding-top: 30px;
+    }
+
+    #tilmeld_nu h2,
+    #tilmeld_nu h3,
+    #tilmeld_nu .col_right p {
+        color: white;
+    }
+
+    /******************** OPRET SLUT ********************/

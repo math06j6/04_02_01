@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="https://use.typekit.net/xsm3nmq.css">
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="grafik/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="grafik/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="grafik/favicons/favicon-16x16.png">
+    <link rel="manifest" href="grafik/favicons/site.webmanifest">
+    <link rel="mask-icon" href="grafik/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="kea">
+                    <a href="index.html">
+                        <figure class="kea"><img src="grafik/logo.svg" alt="logo">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <!---<div><a href="#">
+                    <i class="fa fa-fw fa-user"></i></a>
+            </div>--->
+            <div>
+                <div id="navOverlay" class="overlay">
+                    <a href="javascript:void(0)" id="nav_close" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul id="menu" class="hidden">
+                        <li class="home"><a href="forside.html#forside">Home</a></li>
+                        <li><a href="#">Learning</a>
+                            <ul>
+                                <li><a href="index.html#exams">Exams</a></li>
+                                <li><a href="index.html#materials">Materials</a></li>
+                                <li><a href="index.html#exercises">Exercises</a></li>
+                                <li><a href="afleveringer.html">Assignments</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="afleveringer.html">Assignments</a></li>
+                        <li><a href="index.html#messages">Messages</a></li>
+                        <li><a href="index.html#schedule">Schedule</a></li>
+                        <li><a href="index.html#chat">Chat</a></li>
+                        <li><a href="index.html#notifications">Notifications</a></li>
+                        <li><a href="index.html#mail">KEA Mail</a></li>
+                        <!---<li><a href="index.html#info">Info</a></li>
+                        <li><a href="index.html#settings">Settings</a></li>
+                        <li><a href="index.html#search">Search</a></li>-->
+                    </ul>
+                </div>
+                <div id="menuknap" onclick="openNav()">&#9776;</div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="tilmeld_nu">
+        <div class="sectionwrapper">
+
+            <div class="col_right">
+                <div class="txt">
+                    <h2>Indmeldelsesformular</h2>
+
+                </div>
+
+                <div class="login ">
+
+                    <form action="/action_page.php" method="get" id="nameform">
+
+                        <input type="text" name="firstname" placeholder="Dit fornavn" class="firstname">
+
+                        <input type="text" name="lastname" placeholder="Dit efternavn" class="lastname">
+
+                        <input type="text" name="adresse" placeholder="Din adresse" class="adresse">
+
+                        <input type="number" name="post" placeholder="Post nummer" class="post">
+
+                        <input type="text" name="by" placeholder="By" class="by">
+
+                        <input type="date" required="required" name="bday" placeholder="Fødselsdato" class="bday">
+
+                        <input type="tel" name="nummer" placeholder="Telefon nummer" class="nummer">
+
+                        <input type="email" name="emailaddress" placeholder="Din mailadresse" class="email">
+
+                        <br>
+                        <input type="submit" value="Tilmeld" class="button">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer> </footer>
+</body></html>
